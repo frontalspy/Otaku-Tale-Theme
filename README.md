@@ -1,6 +1,6 @@
 ![Otaku Tale](https://github.com/frontalspy/Otaku-Tale-Theme/blob/master/assets/images/otaku%20tale.jpg)
 
-The Otaku Tale theme is based on the [Gromf theme](https://github.com/schikulski/Gromf) that uses Foundation 5. An theme update for Foundation 6 will be made eventually. 
+The [Otaku Tale](http://www.otakutale.com/) theme is based on the [Gromf theme](https://github.com/schikulski/Gromf) that uses Foundation 5. An theme update for Foundation 6 will be made eventually. 
 
 You will need to setup Node.js as it uses Gulp, Sass, and bower as part of its workflow. The Foundation 6 version of the theme will be more streamlined.
 
