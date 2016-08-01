@@ -1,14 +1,14 @@
-![Gromf](https://raw.githubusercontent.com/schikulski/gromf/master/screenshot.png)
+![Otaku Tale](https://github.com/frontalspy/Otaku-Tale-Theme/blob/master/assets/images/otaku%20tale.jpg)
+
+The Otaku Tale theme is based on the [Gromf theme](https://github.com/schikulski/Gromf) that uses Foundation 5. An theme update for Foundation 6 will be made eventually. 
+
+You will need to setup Node.js as it uses Gulp, Sass, and bower as part of its workflow. The Foundation 6 version of the theme will be more streamlined.
+
 
 # Gromf
-[![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
-[![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
 Gromf is a [Sage](https://github.com/roots/sage) fork, a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Foundation Sass, that will help you make better themes.
 
-While Sage is set up to use Bootstrap as default, Gromf uses Foundation. Everything else is more or less the same.
-
-Gromf for Roots 7.x is still available under the 7.x branch.
 
 * Sage Source: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Sage Homepage: [https://roots.io/sage/](https://roots.io/sage/)
