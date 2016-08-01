@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+.body {
+    background-colour: #E7E7E7;
+}
+
+.bree-font {
+    font-family: 'Bree Serif', serif;
+}
+
+.primary-colour {
+    color: $primary-colour;
+}
+
+.primary-background {
+    background-color: $primary-colour;
+}
+
+.secondary-colour {
+    color: $secondary-colour;
+}
+
+.secondary-background {
+    background-color: $secondary-colour;
+}
+
+.grey-background {
+    background: $grey;
+}
+
+.white-background {
+    background: white;
+}
+
+.white-colour {
+    color: white;
+}
+
+.transparent {
+    background: transparent;
+}
+
+.transition {
+    transition: all .3s ease-in-out;
+}
+
+h1, h2, h3, h4 {
+    @extend .bree-font;
+}
+
+p, span, div {
+    color: #565656;
+    font-size: 0.98em;
+}
+
+li {
+        color: #565656;
+    font-size: 0.925em;
+}
+a {
+    @extend .primary-colour, .transition;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+h15 {
+    font-size: 0.75em;
+}
+
+.widget h4 {
+    @extend .primary-colour;
+}
+
+#wpadminbar {
+    position: fixed;
+}
+
+table {
+    tr:nth-of-type(2n) {
+        background: #eee;
+    }
+    td {
+        border: 1px solid #ddd;
+    }
+}

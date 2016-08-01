@@ -1,0 +1,125 @@
+.sidebar {
+    float: right;
+    @media #{$medium-only} {
+        padding-right: 0.5rem;
+    }
+    @media #{$small-only} {
+        margin: 1rem 0;
+        padding: 0 1rem;
+    }
+    .widget {
+        @extend .white-background;
+        border: 1px solid lightgrey;
+        margin-bottom: 1rem;
+        clear: both;
+    }
+    h4 {
+        @extend .white-colour,
+        .secondary-background;
+        padding-left: 1rem;
+        margin-top: 0;
+    }
+    .rpwe-ul {
+        margin-bottom: 0;
+    }
+    .rpwe_widget-2 {
+        margin-top: 15rem;
+        img {
+            width: 110px;
+            height: 82px;
+        }
+    }
+    .rpwe_widget-3 {
+        img {
+            width: 120px;
+            height: 68px;
+        }
+    }
+    .recent-posts-extended {
+        a {
+            color: black;
+            &:hover {
+                color: $primary-colour;
+            }
+        }
+    }
+    .sidebar-social {
+        margin-top: -0.45rem;
+        .twitter {
+            border-right: 2px solid white;
+            svg {
+                width: 50%;
+                height: 140px;
+                background: #55acee;
+                float: left;
+                &:hover {
+                    background: lighten(#55acee, 5);
+                }
+            }
+        }
+        .facebook {
+            svg {
+                width: 50%;
+                height: 60px;
+                float: right;
+                border-bottom: 1px solid white;
+                background: #3B5998;
+                &:hover {
+                    background: lighten(#3B5998, 5);
+                    path {
+                        fill: lighten(#3B5998, 5);
+                        &:hover {
+                            fill: lighten(#3B5998, 5);
+                        }
+                    }
+                }
+            }
+        }
+        .rss {
+            svg {
+                border-top: 1.5px solid white;
+                width: 100%;
+                height: 100px;
+                background: #e9a01c;
+                float: left;
+                padding: 0.95rem;
+                &:hover {
+                    background: lighten(#e9a01c, 5);
+                }
+            }
+        }
+        .two {
+            float: right;
+            height: 80px;
+            width: 50%;
+            .tumblr,
+            .pinterest {
+                width: 50%;
+                svg {
+                    padding: 0.5rem;
+                    height: 80px;
+                    width: 100%;
+                }
+            }
+            .tumblr {
+                border-right: 0.5px solid white;
+                float: left;
+                svg {
+                    background: #35465c;
+                    &:hover {
+                        background: lighten(#35465c, 5);
+                    }
+                }
+            }
+            .pinterest {
+                float: right;
+                svg {
+                    background: #bd081c;
+                    &:hover {
+                        background: lighten(#bd081c, 5);
+                    }
+                }
+            }
+        }
+    }
+}

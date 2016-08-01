@@ -1,0 +1,58 @@
+@import "common/_variables";
+
+// Foundation variables goes here, before including foundation framework
+// $body-bg: pink;
+
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation/scss/normalize.scss";
+@import "../../bower_components/foundation/scss/foundation.scss";
+// endbower
+
+
+
+@import "common/_global";
+@import "components/_buttons";
+@import "components/_comments";
+@import "components/_forms";
+@import "components/_grid";
+@import "components/_wp-classes";
+@import "layouts/_header";
+@import "layouts/_sidebar";
+@import "layouts/_footer";
+@import "layouts/_pages";
+@import "layouts/_posts";
+
+
+
+
+/*==========  Foundation Media Queries - copy/paste from here if needed  ==========*/
+
+@media #{$small-up} { }
+@media #{$small-only} { }
+
+@media #{$medium-up} { }
+@media #{$medium-only} { }
+
+@media #{$large-up} { }
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
+
+
+
+
+/*==========  Fixes overlapping admin bar  ==========*/
+
+
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+		position: fixed !important;
+	}
+}
+            

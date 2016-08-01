@@ -1,0 +1,53 @@
+.contain-to-grid {
+    @extend .transparent;
+    max-width: 1220px;
+    margin: auto;
+    display: block;
+    .top-bar {
+        @extend .secondary-background;
+        max-width: 100%;
+        margin: 0.2rem 0 0 0;
+    }
+}
+
+.top-bar {
+    @media (min-width: 641px) and (max-width: 808px) {
+        display: table;
+    }
+}
+
+.top-bar-section {
+    @extend .secondary-background;
+    #menu-main-menu {
+        li {
+            @media #{$small-only} {
+                text-align: center;
+            }
+            &:hover {
+                display: block;
+            }
+            a {
+                @extend .secondary-background,
+                .bree-font;
+                padding: 0 1.1rem;
+                font-size: 1.2em;
+                &:hover {
+                    @extend .primary-background;
+                }
+                @media #{$small-only} {
+                    padding: 0.5rem 0;
+                }
+            }
+            .sub-menu {
+                display: none;
+            }
+        }
+    }
+}
+
+.top-bar.expanded {
+    @extend .secondary-background;
+    .toggle-topbar a span::after {
+        box-shadow: 0 0 0 1px $primary-colour, 0 7px 0 1px $primary-colour, 0 14px 0 1px $primary-colour;
+    }
+}

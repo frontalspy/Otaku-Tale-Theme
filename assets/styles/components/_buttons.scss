@@ -1,0 +1,6 @@
+button, .button {
+    @extend .primary-background;
+    &:hover {
+        @extend .primary-background, .secondary-colour;
+    }
+}

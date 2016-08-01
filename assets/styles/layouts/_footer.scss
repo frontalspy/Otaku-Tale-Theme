@@ -1,0 +1,112 @@
+footer {
+    @extend .secondary-background;
+    padding: 1rem 0 0 0;
+    .row {
+        margin: auto;
+        display: block;
+        h3 {
+            @extend .primary-colour;
+            font-size: 1.25em;
+        }
+    }
+    .copyright {
+        background: #212121;
+        color: #666;
+        padding: 0.5rem 0;
+        @media #{$small-only} {
+            text-align: center;
+        }
+    }
+    .widget {
+        @media #{$small-only} {
+            text-align: center;
+            padding: 0 0.25rem;
+        }
+        h4 {
+            margin-bottom: 1rem;
+        }
+    }
+    .footer-new-ad {
+        max-width: 728px;
+    }
+    .footer-social {
+        margin-top: -0.45rem;
+        .twitter,
+        .facebook,
+        .tumblr,
+        .rss,
+        .stumbleupon,
+        .pinterest,
+        .google-plus {
+            display: inline-block;
+        }
+        svg {
+            width: 50px;
+            height: 50px;
+        }
+        .twitter {
+            svg {
+                background: #55acee;
+                float: left;
+                &:hover {
+                    background: lighten(#55acee, 5);
+                }
+            }
+        }
+        .facebook {
+            svg {
+                background: #3B5998;
+                &:hover {
+                    background: lighten(#3B5998, 5);
+                    path {
+                        fill: lighten(#3B5998, 5);
+                        &:hover {
+                            fill: lighten(#3B5998, 5);
+                        }
+                    }
+                }
+            }
+        }
+        .rss {
+            svg {
+                background: #e9a01c;
+                float: left;
+                &:hover {
+                    background: lighten(#e9a01c, 5);
+                }
+            }
+        }
+        .tumblr {
+            svg {
+                background: #35465c;
+                &:hover {
+                    background: lighten(#35465c, 5);
+                }
+            }
+        }
+        .pinterest {
+            svg {
+                background: #bd081c;
+                &:hover {
+                    background: lighten(#bd081c, 5);
+                }
+            }
+        }
+        .stumbleupon {
+            svg {
+                background: #eb4823;
+                &:hover {
+                    background: lighten(#eb4823, 5);
+                }
+            }
+        }
+        .google-plus {
+            svg {
+                background: #d0422a;
+                &:hover {
+                    background: lighten(#d0422a, 5);
+                }
+            }
+        }
+    }
+}

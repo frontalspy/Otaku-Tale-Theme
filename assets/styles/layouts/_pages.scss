@@ -1,0 +1,350 @@
+body {
+    @extend .grey-background;
+}
+
+.content.row {
+    margin-top: 1rem;
+}
+
+.row {
+    max-width: 1220px;
+}
+
+h2.entry-title {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.home-posts {
+    article {
+        @extend .white-background;
+    }
+}
+
+.pagination {
+    display: inline-block;
+    clear: both;
+    padding: 20px 0;
+    position: relative;
+    font-size: 1.25em;
+    line-height: 13px;
+}
+
+.pagination span,
+.pagination a {
+    @extend .secondary-background,
+    .white-colour;
+    display: block;
+    float: left;
+    margin: 2px 2px 2px 0;
+    padding: 0.5rem;
+    text-decoration: none;
+    width: auto;
+}
+
+.pagination a:hover {
+    @extend .primary-background,
+    .white-colour;
+}
+
+.pagination .current {
+    @extend .primary-background,
+    .white-colour;
+    padding: 0.5rem;
+}
+
+.page-navigation {
+    text-align: center;
+}
+
+.navigation {
+    display: none;
+}
+
+article {
+    height: 100%;
+    @extend .white-background;
+    .entry-summary {
+        padding: 0 1rem 1rem 1rem;
+        p {
+            padding-top: 0.5rem;
+        }
+        .post-meta a,
+        .home-posts-category a {
+            @extend strong;
+            color: grey;
+            &:hover {
+                color: $primary-colour;
+            }
+        }
+        .home-posts-category {
+            font-size: 0.8em;
+        }
+    }
+    li {
+        margin-left: 2rem;
+    }
+    .share {
+        text-align: center;
+        padding: 1.5rem 0;
+        share-button {
+            padding: 0.5rem 2.5rem;
+            border-radius: 0;
+            &:before {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.single article {
+    padding: 0.5rem 1rem;
+    margin-top: -1rem;
+    .entry-title {
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .post-meta a {
+        @extend strong;
+        color: grey;
+        &:hover {
+            color: $primary-colour;
+        }
+    }
+}
+
+.single main {
+    padding-left: 0;
+    @media #{$small-only} {
+        padding-right: 0;
+    }
+}
+
+.vcard {
+    border: none;
+    padding: 0;
+}
+
+.post-meta {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.home-post-thumbnail {
+    text-align: center;
+}
+
+.tags {
+    text-align: center;
+    a {
+        @extend strong;
+        padding: 0 0.5rem;
+        color: grey;
+        background: #eee;
+        border-radius: 20px;
+        font-size: 0.65em;
+        &:hover {
+            color: $primary-colour;
+        }
+    }
+}
+
+.search .page-header h1 {
+    font-size: 1.8rem;
+}
+
+.home-posts-catergory a{
+    @extend strong;
+    font-size: 0.75em;
+    color: grey;
+}
+
+.home-posts h2 a,
+.home-posts a h2, .search a h2, .search h2 a {
+    color: black;
+    &:hover {
+        color: $primary-colour;
+    }
+}
+
+.page {
+    .content.row {
+        margin-top: 0;
+        main {
+            @extend .white-background;
+        }
+    }
+    .sidebar {
+        @media #{$medium-up} {
+            margin-top: 0.5rem;
+        }
+    }
+    main {
+        @media #{$medium-up} {
+            width: 73.75%;
+        }
+    }
+}
+
+#tinymce {
+    @extend .white-background;
+}
+
+.sidebar,
+.search-no-results {
+    .search {
+        padding: 0 0.5rem;
+        .row {
+            margin: 0;
+        }
+        .search-box {
+            float: left;
+            width: calc(100% - 50px);
+        }
+        .search-button {
+            float: right;
+            width: 50px;
+        }
+        i {
+            font-size: 1.5em;
+            padding: 0.35rem;
+        }
+    }
+}
+
+.home-slider {
+    max-width: 850px;
+    display: block;
+    margin: auto;
+    margin-bottom: 0.5rem;
+    .slick-list {
+        width: 100%;
+    }
+    .slide {
+        position: relative;
+        img {
+            width: 100%;
+        }
+        .slider-overlay {
+            width: 100%;
+            position: absolute;
+            padding-top: 0.5rem;
+            bottom: 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.65);
+            @media #{$small-only} {
+                position: inherit;
+            }
+            p {
+                @extend .white-colour;
+            }
+            p:first-of-type {
+                margin-bottom: 0;
+            }
+            p:second-of-type {
+                font-size: 0.9em;
+                padding: 0 3.5rem;
+            }
+        }
+    }
+    .slick-dots {
+        bottom: -18px;
+        @media #{$small-only} {
+            margin-left: 0;
+        }
+        li button:before {
+            color: white;
+            font-size: 1rem;
+            opacity: 1;
+        }
+        li.slick-active button:before {
+            color: $primary-colour;
+            opacity: 1;
+        }
+        li {
+            margin: 0;
+        }
+    }
+    i {
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        z-index: 9;
+        font-size: 1.5em;
+        color: white;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 0.5rem 0.5rem;
+        cursor: pointer;
+        &:hover {
+            background: black;
+        }
+    }
+    .fa-arrow-left {
+        left: 0;
+        @media #{$small-only} {
+            display: none !important;
+        }
+    }
+    .fa-arrow-right {
+        right: 0;
+        @media #{$small-only} {
+            display: none !important;
+        }
+    }
+}
+
+.jssocials {
+    text-align: center;
+    padding: 1rem 0;
+    span {
+        @extend .white-colour;
+    }
+    .jssocials-share {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.3em;
+    }
+    .jssocials-share-logo {
+        width: 1em;
+        vertical-align: middle;
+        font-size: 1.5em;
+    }
+    .jssocials-share-label {
+        padding-left: 0.3em;
+        vertical-align: middle;
+    }
+    .jssocials-share-no-count {
+        display: none;
+    }
+    .jssocials-share-count-box {
+        float: right;
+    }
+    .jssocials-share-link {
+        float: left;
+    }
+}
+
+iframe {
+    width: 100% !important;
+}
+
+.cfmonitor {
+    @extend .small-12;
+}
+
+.wpcf7-submit {
+    @extend .button,
+    .small-12;
+    &:hover {
+        color: black;
+    }
+}
+
+#wpstats {
+    display: none;
+}
+
+body#wpview-iframe-sandbox {
+    height: 100% !important;
+}
